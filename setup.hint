@@ -1,0 +1,5 @@
+category: Audio OCaml
+requires: cygwin libsoundtouch0 ocaml
+sdesc: "OCaml SoundTouch bindings"
+ldesc: "This package contains an O'Caml interface for sound stretching 
+library, otherwise known as libsoundtouch."
