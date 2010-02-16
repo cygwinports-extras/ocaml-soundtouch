@@ -1,0 +1,14 @@
+inherit ocaml utils
+
+DESCRIPTION="OCaml SoundTouch library"
+HOMEPAGE="http://savonet.sourceforge.net/"
+SRC_URI="mirror://sourceforge/savonet/${P}.tar.gz"
+PATCH_URI="0.1.5-soundtouch14.patch"
+
+src_compile() {
+	cd ${S}
+	lndirs
+	cd ${B}
+	cygconf
+	cygmake -j1 CLIBS="SoundTouch stdc++"
+}

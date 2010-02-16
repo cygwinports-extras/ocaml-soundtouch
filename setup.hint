@@ -1,5 +1,5 @@
 category: Audio OCaml
-requires: libsoundtouch0 ocaml
+requires: libgcc1 libSoundTouch0 libSoundTouch-devel ocaml
 sdesc: "OCaml SoundTouch bindings"
 ldesc: "This package contains an O'Caml interface for sound stretching 
 library, otherwise known as libsoundtouch."
