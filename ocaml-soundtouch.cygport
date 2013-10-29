@@ -1,0 +1,20 @@
+inherit ocaml utils
+
+NAME="ocaml-soundtouch"
+VERSION=0.1.7
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="OCaml SoundTouch bindings"
+DESCRIPTION="This package contains an O'Caml interface for sound stretching
+library, otherwise known as libsoundtouch."
+HOMEPAGE="http://savonet.sourceforge.net/"
+SRC_URI="mirror://sourceforge/savonet/${NAME}-${VERSION}.tar.gz"
+
+src_compile() {
+	cd ${S}
+	lndirs
+	cd ${B}
+	SOUNDTOUCH_PKG="soundtouch-1.4" \
+	cygconf
+	cygmake -j1 CLIBS="SoundTouch stdc++"
+}
