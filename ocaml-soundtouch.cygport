@@ -2,7 +2,7 @@ inherit ocaml utils
 
 NAME="ocaml-soundtouch"
 VERSION=0.1.7
-RELEASE=1
+RELEASE=2
 CATEGORY="Libs"
 SUMMARY="OCaml SoundTouch bindings"
 DESCRIPTION="This package contains an O'Caml interface for sound stretching
